@@ -14,7 +14,10 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- Spring -->
-		<spring-framework.version>3.2.5.RELEASE</spring-framework.version>
+		<spring-framework.version>4.0.2.RELEASE</spring-framework.version>
+
+		<!-- Content -->
+		<jackson.version>2.3.0</jackson.version>
 
 		<!-- Logging -->
 		<slf4j.version>1.7.5</slf4j.version>
@@ -51,14 +54,9 @@
 
 		<!-- Jackson -->
 		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-core-asl</artifactId>
-			<version>1.9.13</version>
-		</dependency>
-		<dependency>
-			<groupId>org.codehaus.jackson</groupId>
-			<artifactId>jackson-mapper-asl</artifactId>
-			<version>1.9.13</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 </project>

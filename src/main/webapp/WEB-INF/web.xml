@@ -3,26 +3,15 @@
           http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
 
-	<display-name>Spring Web MVC Application</display-name>
-
+	<display-name>Alloy Training WebServices</display-name>
 	<servlet>
-		<servlet-name>rest</servlet-name>
+		<servlet-name>api</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>rest</servlet-name>
+		<servlet-name>api</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-
-	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<param-value>/WEB-INF/rest-servlet.xml</param-value>
-	</context-param>
-
-	<listener>
-		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-	</listener>
-
 </web-app>
