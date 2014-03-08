@@ -1,0 +1,7 @@
+/target
+/bin
+/.springBeans
+/src/main/webapp/WEB-INF/logs/**/*
+.classpath
+.project
+.settings
